@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using UWOScholarAndroid;
 
 namespace UWOScholar
 {
@@ -21,19 +22,24 @@ namespace UWOScholar
         Button btnSubtract;
         Button btnMultiply;
         Button btnDivide;
+        Button btnBack;
+        Button btnLogOut;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Register);
+            SetContentView(Resource.Layout.ScientificCalculator);
 
             txtValue1 = FindViewById<EditText>(Resource.Id.txtValue1);
             txtValue2 = FindViewById<EditText>(Resource.Id.txtValue2);
             btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
             btnSubtract = FindViewById<Button>(Resource.Id.btnSubtract);
             btnMultiply = FindViewById<Button>(Resource.Id.btnMultiply);
-            btnDivide = FindViewById<Button>(Resource.Id.btnDivide;
+            btnDivide = FindViewById<Button>(Resource.Id.btnDivide);
+            btnBack = FindViewById<Button>(Resource.Id.btnBack);
+            btnLogOut = FindViewById<Button>(Resource.Id.btnLogOut);
+
 
 
 
@@ -41,6 +47,18 @@ namespace UWOScholar
             btnSubtract.Click += BtnSubtract_Click;
             btnMultiply.Click += BtnMultiply_Click;
             btnDivide.Click += BtnDivide_Click;
+            btnBack.Click += BtnBack_Click;
+            btnLogOut.Click += BtnLogOut_Click;
+        }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(MainActivity));
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(HomeActivity));
         }
 
         private void BtnAdd_Click(object sender, System.EventArgs e)

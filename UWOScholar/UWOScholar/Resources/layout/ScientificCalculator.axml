@@ -3,44 +3,56 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:text="Home"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBack" />
-    <Button
-        android:text="LogOut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnLogOut" />
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Home"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="LogOut"
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtValue1"
-        android:hint="first number" />
+        android:hint="First Number" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtValue2"
-        android:hint="second number" />
-    <Button
-        android:text="Add"
+        android:hint="Second Number" />
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAdd" />
-    <Button
-        android:text="Subtract"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSubtract" />
-    <Button
-        android:text="Multiply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnMultiply" />
-    <Button
-        android:text="Divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnDivide" />
+        android:id="@+id/linearLayout2">
+        <Button
+            android:text="Add"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Subtract"
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Multiply"
+            android:id="@+id/btnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Divide"
+            android:id="@+id/btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </LinearLayout>
