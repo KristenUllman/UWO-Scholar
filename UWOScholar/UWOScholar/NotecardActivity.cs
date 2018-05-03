@@ -17,8 +17,8 @@ namespace UWOScholar
     {
         Button btnCreateCard;
         Button btnEditCard;
-        EditText txtFront;
-        EditText txtBack;
+        EditText txtTerm;
+        EditText txtDefinition;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,8 +27,8 @@ namespace UWOScholar
 
             btnCreateCard = FindViewById<Button>(Resource.Id.btnCreateCard);
             btnEditCard = FindViewById<Button>(Resource.Id.btnEditCard);
-            txtFront = FindViewById<EditText>(Resource.Id.txtFront);
-            txtBack = FindViewById<EditText>(Resource.Id.txtBack);
+            txtTerm = FindViewById<EditText>(Resource.Id.txtTerm);
+            txtDefinition = FindViewById<EditText>(Resource.Id.txtDefinition);
             btnCreateCard.Click += btnCreateCard_Click;
             btnEditCard.Click += btnEditCard_Click;
 

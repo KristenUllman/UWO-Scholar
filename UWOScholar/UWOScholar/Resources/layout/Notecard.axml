@@ -37,22 +37,22 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtFront"
+            android:id="@+id/txtTerm"
             android:drawableRight="@android:color/black"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:hint="Front Side"
+            android:hint="Term"
             android:elevation="20dp" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtBack"
+            android:id="@+id/txtDefinition"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:hint="Back Side" />
+            android:hint="Definition" />
     </LinearLayout>
 </LinearLayout>
