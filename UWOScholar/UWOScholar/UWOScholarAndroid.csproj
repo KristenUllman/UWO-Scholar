@@ -105,6 +105,7 @@
     <Compile Include="ScientificCalculator.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="StudyFeature.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
