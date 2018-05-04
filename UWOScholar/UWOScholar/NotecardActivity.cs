@@ -59,8 +59,8 @@ namespace UWOScholar
             {
                 string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");
                 var db = new SQLiteConnection(dpPath);
-                db.CreateTable<NotecardTable>();
-                NotecardTable tbl = new NotecardTable();
+                db.CreateTable<NoteCard>();
+                NoteCard tbl = new NoteCard();
                 tbl.term = txtTerm.Text;
                 tbl.definition = txtDefinition.Text;
                 db.Insert(tbl);

@@ -13,16 +13,23 @@ using SQLite;
 
 namespace UWOScholar
 {
-    [Table("notecards")]
-    public class NotecardTable
+    public class NoteCard
     {
 
-        [PrimaryKey, AutoIncrement, Column("_Notecard")]
+        [PrimaryKey, AutoIncrement, Column("_NId")]
         public int notecardId { get; set; }
+
+        [Indexed]
+        public int FolderId { get; set; }
         [MaxLength(25), NotNull]
         public string term { get; set; }
         [MaxLength(100), NotNull]
         public string definition { get; set; }
-        //[MaxLength(100)]
+
+
+        public override string ToString()
+        {
+            return string.Format (term, definition);
+        }
     }
 }
