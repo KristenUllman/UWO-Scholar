@@ -107,6 +107,7 @@
     <Compile Include="ScientificCalculator.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="StudyFeature.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -129,6 +130,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\FolderListView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StudyFeature.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
