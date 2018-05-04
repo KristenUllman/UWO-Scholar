@@ -1945,6 +1945,9 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0073
 			public const int btnRegister = 2131427443;
 			
+			// aapt resource value: 0x7f0b009d
+			public const int btnShowDefinition = 2131427485;
+			
 			// aapt resource value: 0x7f0b0099
 			public const int btnSubtract = 2131427481;
 			
@@ -2056,20 +2059,20 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006c
 			public const int menu = 2131427436;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int menuFolder = 2131427485;
+			// aapt resource value: 0x7f0b00a0
+			public const int menuFolder = 2131427488;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int menuHome = 2131427486;
+			// aapt resource value: 0x7f0b00a1
+			public const int menuHome = 2131427489;
+			
+			// aapt resource value: 0x7f0b00a2
+			public const int menuLabCheck = 2131427490;
+			
+			// aapt resource value: 0x7f0b00a3
+			public const int menu_edit = 2131427491;
 			
 			// aapt resource value: 0x7f0b009f
-			public const int menuLabCheck = 2131427487;
-			
-			// aapt resource value: 0x7f0b00a0
-			public const int menu_edit = 2131427488;
-			
-			// aapt resource value: 0x7f0b009c
-			public const int message = 2131427484;
+			public const int message = 2131427487;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2220,6 +2223,12 @@ namespace UWOScholar
 			
 			// aapt resource value: 0x7f0b0044
 			public const int textSpacerNoTitle = 2131427396;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int textView1 = 2131427484;
+			
+			// aapt resource value: 0x7f0b009e
+			public const int textView2 = 2131427486;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int time = 2131427460;
@@ -2482,13 +2491,16 @@ namespace UWOScholar
 			public const int select_dialog_singlechoice_material = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int support_simple_spinner_dropdown_item = 2130968627;
+			public const int StudyFeature = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int toolbar = 2130968628;
+			public const int support_simple_spinner_dropdown_item = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int tooltip = 2130968629;
+			public const int toolbar = 2130968629;
+			
+			// aapt resource value: 0x7f040036
+			public const int tooltip = 2130968630;
 			
 			static Layout()
 			{
