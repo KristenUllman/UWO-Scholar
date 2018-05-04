@@ -1906,8 +1906,8 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b002f
 			public const int bottom = 2131427375;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int btnAdd = 2131427479;
+			// aapt resource value: 0x7f0b0098
+			public const int btnAdd = 2131427480;
 			
 			// aapt resource value: 0x7f0b006a
 			public const int btnAddFolder = 2131427434;
@@ -1927,8 +1927,8 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0075
 			public const int btnCreateCard = 2131427445;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int btnDivide = 2131427482;
+			// aapt resource value: 0x7f0b009b
+			public const int btnDivide = 2131427483;
 			
 			// aapt resource value: 0x7f0b0076
 			public const int btnEditCard = 2131427446;
@@ -1939,14 +1939,14 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0072
 			public const int btnLogin = 2131427442;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int btnMultiply = 2131427481;
+			// aapt resource value: 0x7f0b009a
+			public const int btnMultiply = 2131427482;
 			
 			// aapt resource value: 0x7f0b0073
 			public const int btnRegister = 2131427443;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int btnSubtract = 2131427480;
+			// aapt resource value: 0x7f0b0099
+			public const int btnSubtract = 2131427481;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int buttonPanel = 2131427390;
@@ -2038,6 +2038,9 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0074
 			public const int linearLayout1 = 2131427444;
 			
+			// aapt resource value: 0x7f0b0097
+			public const int linearLayout2 = 2131427479;
+			
 			// aapt resource value: 0x7f0b000f
 			public const int listMode = 2131427343;
 			
@@ -2053,20 +2056,20 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006c
 			public const int menu = 2131427436;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int menuFolder = 2131427484;
-			
 			// aapt resource value: 0x7f0b009d
-			public const int menuHome = 2131427485;
+			public const int menuFolder = 2131427485;
 			
 			// aapt resource value: 0x7f0b009e
-			public const int menuLabCheck = 2131427486;
+			public const int menuHome = 2131427486;
 			
 			// aapt resource value: 0x7f0b009f
-			public const int menu_edit = 2131427487;
+			public const int menuLabCheck = 2131427487;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int message = 2131427483;
+			// aapt resource value: 0x7f0b00a0
+			public const int menu_edit = 2131427488;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int message = 2131427484;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2239,23 +2242,23 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0049
 			public const int topPanel = 2131427401;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int txtBack = 2131427448;
-			
 			// aapt resource value: 0x7f0b0090
 			public const int txtConfirmPassword = 2131427472;
 			
+			// aapt resource value: 0x7f0b0078
+			public const int txtDefinition1 = 2131427448;
+			
 			// aapt resource value: 0x7f0b008e
 			public const int txtEmail = 2131427470;
-			
-			// aapt resource value: 0x7f0b0077
-			public const int txtFront = 2131427447;
 			
 			// aapt resource value: 0x7f0b0069
 			public const int txtName = 2131427433;
 			
 			// aapt resource value: 0x7f0b008f
 			public const int txtPassword = 2131427471;
+			
+			// aapt resource value: 0x7f0b0077
+			public const int txtTerm1 = 2131427447;
 			
 			// aapt resource value: 0x7f0b008d
 			public const int txtUsername = 2131427469;
