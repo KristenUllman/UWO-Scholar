@@ -19,9 +19,10 @@ namespace UWOScholar
         [PrimaryKey, AutoIncrement, Column("_Notecard")]
         public int notecardId { get; set; }
         [MaxLength(25)]
-        public string frontSide { get; set; }
+        public string term { get; set; }
         [MaxLength(100)]
-        public string backSide { get; set; }
+        public string definition { get; set; }
         [MaxLength(100)]
     }
-}
+
+    }
