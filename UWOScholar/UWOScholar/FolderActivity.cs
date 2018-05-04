@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -10,6 +11,7 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 using UWOScholarAndroid;
 
 namespace UWOScholar
@@ -21,7 +23,7 @@ namespace UWOScholar
         Toolbar menuBottom;
         Button btnAddFolder;
         EditText txtFolderName;
-       // private List<string> folders;
+        ListView listFolders;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,7 +35,7 @@ namespace UWOScholar
             toolbarTop = FindViewById<Toolbar>(Resource.Id.toolbar);
             txtFolderName = FindViewById<EditText>(Resource.Id.txtName);
             btnAddFolder = FindViewById<Button>(Resource.Id.btnAddFolder);
-
+            listFolders = FindViewById<ListView>(Resource.Id.folderListView);
 
             //Bottom Menu Bar setting and giving it functionality
             //Probably should make a class that does this so we can call it on each page.
@@ -58,11 +60,30 @@ namespace UWOScholar
             SetActionBar(toolbarTop);
             ActionBar.Title = "My Backpack";
 
-            //btnAddFolder.Click += BtnAddFolder_Click;
+            btnAddFolder.Click += BtnAddFolder_Click;
 
         }
 
-        //private Button BtnAddFolder_Click(object sender, System.EventArgs e)
-      
+        private void BtnAddFolder_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");
+                var db = new SQLiteConnection(dpPath);
+                db.CreateTable<FolderTable>();
+                FolderTable tbl = new FolderTable();
+                tbl.FolderName = txtFolderName.ToString();
+
+                db.Insert(tbl);
+                Toast.MakeText(this, "Folder Created Successfully", ToastLength.Short).Show();
+
+                //
+
+            }
+            catch (Exception ex)
+            {
+                Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
+            }
+        }
     }
 }
