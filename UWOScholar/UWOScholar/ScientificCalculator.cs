@@ -13,7 +13,7 @@ using UWOScholarAndroid;
 
 namespace UWOScholar
 {
-    [Activity(Label = "ScientificCalculator")]
+    [Activity(Label = "Scientific Calculator")]
     public class ScientificCalculator : Activity
     {
         EditText txtValue1;

@@ -15,7 +15,7 @@ using UWOScholar;
 
 namespace UWOScholarAndroid
 {
-    [Activity(Label = "RegisterActivity")]
+    [Activity(Label = "Register")]
     public class RegisterActivity : Activity
     {
         EditText txtEmail;

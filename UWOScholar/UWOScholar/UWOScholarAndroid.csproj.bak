@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -92,18 +92,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FolderActivity.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Folders\FolderActivity.cs" />
+    <Compile Include="Folders\Folder.cs" />
+    <Compile Include="Folders\MyListViewAdapter.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="LoginTable.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NotecardActivity.cs" />
-    <Compile Include="NotecardTable.cs" />
+    <Compile Include="NoteCard.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScientificCalculator.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="StudyFeature.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -123,6 +127,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ScientificCalculator.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FolderListView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StudyFeature.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
