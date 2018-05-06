@@ -1945,8 +1945,8 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0073
 			public const int btnRegister = 2131427443;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int btnShowDefinition = 2131427485;
+			// aapt resource value: 0x7f0b009e
+			public const int btnShowDefinition = 2131427486;
 			
 			// aapt resource value: 0x7f0b0099
 			public const int btnSubtract = 2131427481;
@@ -2059,20 +2059,20 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b006c
 			public const int menu = 2131427436;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int menuFolder = 2131427488;
-			
-			// aapt resource value: 0x7f0b00a1
-			public const int menuHome = 2131427489;
-			
 			// aapt resource value: 0x7f0b00a2
-			public const int menuLabCheck = 2131427490;
+			public const int menuFolder = 2131427490;
 			
 			// aapt resource value: 0x7f0b00a3
-			public const int menu_edit = 2131427491;
+			public const int menuHome = 2131427491;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int message = 2131427487;
+			// aapt resource value: 0x7f0b00a4
+			public const int menuLabCheck = 2131427492;
+			
+			// aapt resource value: 0x7f0b00a5
+			public const int menu_edit = 2131427493;
+			
+			// aapt resource value: 0x7f0b00a1
+			public const int message = 2131427489;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2224,11 +2224,14 @@ namespace UWOScholar
 			// aapt resource value: 0x7f0b0044
 			public const int textSpacerNoTitle = 2131427396;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int textView1 = 2131427484;
+			// aapt resource value: 0x7f0b009d
+			public const int textView1 = 2131427485;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int textView2 = 2131427486;
+			// aapt resource value: 0x7f0b009f
+			public const int textView2 = 2131427487;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int textView3 = 2131427484;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int time = 2131427460;
@@ -2244,6 +2247,9 @@ namespace UWOScholar
 			
 			// aapt resource value: 0x7f0b0067
 			public const int toolbar = 2131427431;
+			
+			// aapt resource value: 0x7f0b00a0
+			public const int toolbar1 = 2131427488;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int top = 2131427376;
