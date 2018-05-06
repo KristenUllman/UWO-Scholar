@@ -14,7 +14,7 @@ using SQLite;
 
 namespace UWOScholar
 {
-    [Activity(Label = "NotecardActivity1")]
+    [Activity(Label = "Notecards")]
     public class NotecardActivity : Activity
     {
         Button btnCreateCard;
@@ -25,7 +25,7 @@ namespace UWOScholar
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.Notecard);
 
             btnCreateCard = FindViewById<Button>(Resource.Id.btnCreateCard);
             btnEditCard = FindViewById<Button>(Resource.Id.btnEditCard);
@@ -59,8 +59,8 @@ namespace UWOScholar
             {
                 string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");
                 var db = new SQLiteConnection(dpPath);
-                db.CreateTable<NotecardTable>();
-                NotecardTable tbl = new NotecardTable();
+                db.CreateTable<NoteCard>();
+                NoteCard tbl = new NoteCard();
                 tbl.term = txtTerm.Text;
                 tbl.definition = txtDefinition.Text;
                 db.Insert(tbl);
