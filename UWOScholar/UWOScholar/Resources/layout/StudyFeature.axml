@@ -3,32 +3,44 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Study Feature"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:text="Show Definition"
+            android:layout_width="157.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnShowDefinition" />
+        <Button
+            android:text="Next Card"
+            android:layout_width="159.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNextCard" />
+    </LinearLayout>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
-    <TextView
-        android:text="Text"
+        android:id="@+id/txtTerm" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:text="Logout"
+            android:layout_width="154.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogout"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="0.0dp" />
+        <Button
+            android:text="Home"
+            android:layout_width="164.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHome" />
+    </LinearLayout>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <Button
-        android:text="Show Definition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnShowDefinition" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
-    <Toolbar
-        android:minHeight="?android:attr/actionBarSize"
-        android:background="?android:attr/colorPrimary"
-        android:minWidth="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar1" />
+        android:id="@+id/txtDefinition" />
 </LinearLayout>
