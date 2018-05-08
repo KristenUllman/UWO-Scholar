@@ -2,45 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+  <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    <Button
+        android:text="Show Definition"
+        android:layout_width="157.0dp"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <Button
-            android:text="Show Definition"
-            android:layout_width="157.0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnShowDefinition" />
-        <Button
-            android:text="Next Card"
-            android:layout_width="159.0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnNextCard" />
+        android:id="@+id/btnShowDefinition" />
+    <Button
+        android:text="Next Card"
+        android:layout_width="159.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextCard" />
+  </LinearLayout>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#333639"
+      android:textColorHint="#333639"
+      android:id="@+id/txtTerm" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    <Button
+        android:text="Logout"
+        android:layout_width="154.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogout"
+        android:layout_marginRight="0.0dp"
+        android:layout_marginLeft="0.0dp" />
+    <Button
+        android:text="Home"
+        android:layout_width="164.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHome" />
+  </LinearLayout>
+  <EditText
+      android:textColor="#333639"
+      android:textColorHint="#333639"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtDefinition" />
+  <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1" />
+        <Toolbar
+            android:id="@+id/menu"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="#ffcc00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtTerm" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <Button
-            android:text="Logout"
-            android:layout_width="154.5dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnLogout"
-            android:layout_marginRight="0.0dp"
-            android:layout_marginLeft="0.0dp" />
-        <Button
-            android:text="Home"
-            android:layout_width="164.0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnHome" />
-    </LinearLayout>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtDefinition" />
-</LinearLayout>

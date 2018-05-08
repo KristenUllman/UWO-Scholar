@@ -11,6 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
+using UWOScholarAndroid;
 
 namespace UWOScholar
 {
@@ -21,6 +22,7 @@ namespace UWOScholar
         Button btnEditCard;
         EditText txtTerm;
         EditText txtDefinition;
+        Toolbar menuBottom;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,10 +36,30 @@ namespace UWOScholar
             btnCreateCard.Click += btnCreateCard_Click;
             btnEditCard.Click += btnEditCard_Click;
             CreateDB();
-
+            DisplayMenu();
             // Create your application here
         }
-
+        private void DisplayMenu()
+        {
+            //Bottom Menu Bar setting and giving it functionality
+            //Probably should make a class that does this so we can call it on each page.
+            menuBottom.Title = "Menu";
+            menuBottom.InflateMenu(Resource.Menu.pageMenu);
+            menuBottom.MenuItemClick += (sender, e) =>
+            {
+                var menuClicked = e.Item.TitleFormatted;
+                if (menuClicked.ToString() == "Folder")
+                {
+                    Intent folderActivity = new Intent(this, typeof(FolderActivity));
+                    StartActivity(folderActivity);
+                }
+                else if (menuClicked.ToString() == "Home")
+                {
+                    Intent homeActivity = new Intent(this, typeof(HomeActivity));
+                    StartActivity(homeActivity);
+                }
+            };
+        }
         public string CreateDB()
         {
             var output = "";

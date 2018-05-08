@@ -24,7 +24,8 @@ namespace UWOScholar
         Button btnDivide;
         Button btnBack;
         Button btnLogOut;
-
+        Toolbar menuBottom;
+        Toolbar toolbarTop;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -49,6 +50,37 @@ namespace UWOScholar
             btnDivide.Click += BtnDivide_Click;
             btnBack.Click += BtnBack_Click;
             btnLogOut.Click += BtnLogOut_Click;
+            DisplayMenu();
+
+        }
+
+        private void DisplayMenu()
+        {
+            menuBottom = FindViewById<Toolbar>(Resource.Id.pageMenu);
+            toolbarTop = FindViewById<Toolbar>(Resource.Id.toolbar);
+            menuBottom.Title = "Calculator";
+            menuBottom.InflateMenu(Resource.Menu.pageMenu);
+            menuBottom.MenuItemClick += (sender, e) =>
+            {
+                var menuClicked = e.Item.TitleFormatted;
+                if (menuClicked.ToString() == "Folder")
+                {
+                    Intent folderActivity = new Intent(this, typeof(FolderActivity));
+                    StartActivity(folderActivity);
+                }
+                else if (menuClicked.ToString() == "Home")
+                {
+                    Intent homeActivity = new Intent(this, typeof(HomeActivity));
+                    StartActivity(homeActivity);
+                }
+                else if (menuClicked.ToString() == "Study")
+                {
+                    Intent studyActivity = new Intent(this, typeof(StudyFeatureActivity));
+                    StartActivity(studyActivity);
+                }
+            };
+            SetActionBar(toolbarTop);
+            ActionBar.Title = "Calculator";
         }
 
         private void BtnLogOut_Click(object sender, EventArgs e)

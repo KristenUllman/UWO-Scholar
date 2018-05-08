@@ -18,6 +18,8 @@ namespace UWOScholarAndroid
     {
         Toolbar toolbarTop;
         Toolbar menuBottom;
+        Button btnCalculator;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -25,10 +27,12 @@ namespace UWOScholarAndroid
             // Create your application here
             SetContentView(Resource.Layout.Home);
 
+            btnCalculator = FindViewById<Button>(Resource.Id.btnCalculator);
+            btnCalculator.Click += BtnCalc_Click;
 
             //Set the toolbar for the home screen
             menuBottom = FindViewById<Toolbar>(Resource.Id.menu);
-            menuBottom.Title = "Menu";
+            menuBottom.Title = "Home";
             menuBottom.InflateMenu(Resource.Menu.pageMenu);
             menuBottom.MenuItemClick += (sender, e) =>
             {
@@ -43,6 +47,11 @@ namespace UWOScholarAndroid
                     Intent homeActivity = new Intent(this, typeof(HomeActivity));
                     StartActivity(homeActivity);
                 }
+                else if (menuClicked.ToString() == "Study")
+                {
+                    Intent studyActivity = new Intent(this, typeof(StudyFeatureActivity));
+                    StartActivity(studyActivity);
+                }
             };
 
             toolbarTop = FindViewById<Toolbar>(Resource.Id.toolbar);
@@ -52,10 +61,13 @@ namespace UWOScholarAndroid
 
         
         }
-        private void MenuItemClicked(object sender, System.EventArgs e)
-        {
 
+        private void BtnCalc_Click(object sender, EventArgs e)
+        {
+            Intent next = new Intent(this, typeof(ScientificCalculator));
+            StartActivity(next);
         }
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.top_menus, menu);

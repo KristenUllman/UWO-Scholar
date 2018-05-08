@@ -49,7 +49,7 @@ namespace UWOScholar
         {
             //Bottom Menu Bar setting and giving it functionality
             //Probably should make a class that does this so we can call it on each page.
-            menuBottom.Title = "Menu";
+            menuBottom.Title = "Folders";
             menuBottom.InflateMenu(Resource.Menu.pageMenu);
             menuBottom.MenuItemClick += (sender, e) =>
             {
@@ -63,6 +63,11 @@ namespace UWOScholar
                 {
                     Intent homeActivity = new Intent(this, typeof(HomeActivity));
                     StartActivity(homeActivity);
+                }
+                else if (menuClicked.ToString() == "Study")
+                {
+                    Intent studyActivity = new Intent(this, typeof(StudyFeatureActivity));
+                    StartActivity(studyActivity);
                 }
             };
 
