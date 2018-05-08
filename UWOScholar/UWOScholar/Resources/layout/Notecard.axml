@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
     android:minWidth="25px"
     android:minHeight="25px">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="618.5dp"
+        android:layout_height="fill_parent"
         android:id="@+id/linearLayout1"
-        android:background="@android:color/black"
+        android:background="#ffffff"
         android:foreground="@android:color/black">
         <Button
             android:text="Create Notecard"
@@ -38,6 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtTerm1"
+            android:textColor="#333639"
+            android:textColorHint="#333639"
             android:drawableRight="@android:color/black"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
@@ -49,10 +52,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtDefinition1"
+            android:textColorHint="#333639"
+            android:textColor="#333639"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:hint="Definition" />
+        <Toolbar
+            android:id="@+id/menu"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="#ffcc00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

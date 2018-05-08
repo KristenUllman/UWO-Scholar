@@ -11,7 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
-
+using UWOScholar;
 
 namespace UWOScholarAndroid
 {

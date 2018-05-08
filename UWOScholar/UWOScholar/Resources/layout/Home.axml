@@ -18,7 +18,7 @@
         android:layout_below="@id/toolbar">
         <TextView
             android:maxLines="50"
-            android:text="Welcome to UWO Scholar! The heart of studying on and off campus. This app was made by students for students. It will allow you to build flashcards specific to your classes and study your flashcards without distractions. If you are a UWO student sign in below to check availability of computers on campus!"
+            android:text="Welcome to UWO Scholar! The heart of studying on and off campus. This app was made by students for students. It will allow you to build flashcards specific to your classes and study your flashcards without distractions!"
             android:layout_width="match_parent"
             android:layout_below="@+id/toolbar"
             android:layout_height="wrap_content"
