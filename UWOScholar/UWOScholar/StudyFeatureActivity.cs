@@ -51,11 +51,13 @@ namespace UWOScholar
         private void BtnNextCard_Click(object sender, EventArgs e)
         {
             txtTerm.Text = "Data Type";
+            txtTerm.Text = "Big Data";
            
         }
         private void BtnShowDefinition_Click(object sender, EventArgs e)
         {
             txtDefinition.Text = "a particular kind of data item, as defined by the values it can take, the programming language used, or the operations that can be performed on it.";
-        }
+            txtDefinition.Text = "extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.";
+
     }
 }
