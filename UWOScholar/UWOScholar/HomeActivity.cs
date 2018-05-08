@@ -18,6 +18,9 @@ namespace UWOScholarAndroid
     {
         Toolbar toolbarTop;
         Toolbar menuBottom;
+        Button btnCalculator;
+        Button btnNotecards;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -25,12 +28,18 @@ namespace UWOScholarAndroid
             // Create your application here
             SetContentView(Resource.Layout.Home);
 
+            btnCalculator = FindViewById<Button>(Resource.Id.btnCalculator);
+            btnNotecards = FindViewById<Button>(Resource.Id.btnNotecards);
+
+            btnCalculator.Click += BtnCalculator_Click;
+            btnNotecards.Click += BtnNotecards_Click;
 
             //Set the toolbar for the home screen
             menuBottom = FindViewById<Toolbar>(Resource.Id.menu);
             menuBottom.Title = "Menu";
             menuBottom.InflateMenu(Resource.Menu.pageMenu);
             menuBottom.MenuItemClick += (sender, e) =>
+
             {
                 var menuClicked = e.Item.TitleFormatted;
                 if (menuClicked.ToString() == "Folder")
@@ -52,6 +61,17 @@ namespace UWOScholarAndroid
 
         
         }
+
+        private void BtnNotecards_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(NotecardActivity));
+        }
+
+        private void BtnCalculator_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ScientificCalculator));
+        }
+
         private void MenuItemClicked(object sender, System.EventArgs e)
         {
 
